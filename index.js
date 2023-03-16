@@ -97,13 +97,13 @@ let netArray = [1];
 let netChangeSum= 0;
 //lest (min)
 //greatest (max)
-//let least = []
-//let greatest = []
+let least = [``, Infinity];
+var greatest = [``, -Infinity];
 
 for(let index = 0; index < finances.length; index++){
     for(let index2 = 0; index2< finances[index].length; index2++){
         
-        if(typeof finances [index2] !== 'string'){
+        if(typeof finances[index][index2] !== 'string'){
             total += finances[index][index2];
             change = finances[index][index2] - net;
             net = finances[index][index2];
